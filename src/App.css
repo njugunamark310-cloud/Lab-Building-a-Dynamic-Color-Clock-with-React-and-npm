@@ -1,0 +1,92 @@
+/* Main clock layout */
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.clock-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: radial-gradient(circle at top left, #30205d, #101020 65%);
+  font-family: 'Inter', sans-serif;
+  color: white;
+}
+
+/* Clock card */
+.clock-card {
+  width: 100%;
+  max-width: 650px;
+  padding: 65px 35px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  border-radius: 28px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 20px 80px rgba(0, 0, 0, 0.35);
+}
+
+/* Heading */
+.greeting {
+  color: #a99aff;
+  font-size: 12px;
+  letter-spacing: 4px;
+  font-weight: 600;
+}
+
+.clock-card h1 {
+  font-size: 38px;
+  margin: 25px 0;
+  background: linear-gradient(90deg, #a78bfa, #38d9ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* Digital time */
+.time-display {
+  font-size: clamp(42px, 9vw, 76px);
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #55dcff;
+  text-shadow: 0 0 25px rgba(85, 220, 255, 0.35);
+  white-space: nowrap;
+}
+
+.time-display span {
+  font-size: 20px;
+  color: #b69cff;
+  margin-left: 10px;
+}
+
+/* Date */
+.date-display {
+  color: #c7c3df;
+  font-size: 17px;
+  margin-top: 25px;
+}
+
+/* Live status */
+.status {
+  margin-top: 40px;
+  color: #62edbd;
+  font-size: 12px;
+  letter-spacing: 3px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+  .clock-card {
+    padding: 45px 15px;
+  }
+
+  .clock-card h1 {
+    font-size: 30px;
+  }
+
+  .date-display {
+    font-size: 14px;
+  }
+}
