@@ -17,6 +17,7 @@ Technologies Used
 Installation
 
 Clone the repository:
+
 git clone njugunamark310@cloud
 Navigate into the project:
 cd color-clock
@@ -25,6 +26,10 @@ npm install
 Start the development server:
 npm run dev
 Open the local URL provided by Vite in your browser.
+
+screenshots of the clock
+![Color Clock Application](screenshots/react-clock.png)
+
 Project Structure
 
 color-clock/
